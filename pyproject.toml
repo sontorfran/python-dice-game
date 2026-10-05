@@ -1,0 +1,23 @@
+[project]
+name = "my-new-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Fran Sontor", email = "sontorfran@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "ipy>=1.1",
+    "ipykernel>=7.4.0",
+    "kernel>=0.119.0",
+    "numpy>=2.5.3",
+    "pandas>=3.0.6",
+]
+
+[project.scripts]
+my-new-project = "my_new_project:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
